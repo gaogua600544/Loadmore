@@ -24,6 +24,7 @@
         oDiv.addEventListener("touchstart",function(ev){
             ev.preventDefault();
             this.innerHTML=ev.targetTouches.length;
+            //console.log(this.innerHTML)
             this.style.display='none';
             oDiv.addEventListener("touchmove",function(ev){
                 this.innerHTML=ev.targetTouches.length;
