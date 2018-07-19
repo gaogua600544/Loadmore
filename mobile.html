@@ -18,11 +18,9 @@
     <div class="box">
         hello world!
     </div>
-    <a href="http://www.baidu.com">跳转到百度</a>
     <script>
         let oDiv = document.querySelector(".box");
         oDiv.addEventListener("touchstart",function(ev){
-            ev.preventDefault();
             this.innerHTML=ev.targetTouches.length;
             //console.log(this.innerHTML)
             this.style.display='none';
